@@ -15,13 +15,12 @@ export default function Hero() {
         <Reveal delay={80}>
           <h1 style={{fontSize:"clamp(2.4rem,5.5vw,5rem)",fontWeight:900,lineHeight:1.08,marginBottom:28,letterSpacing:"-.02em"}}>
             Hello, I'm <span className="teal">Mohsan Ali</span><br/>
-            Full Stack Web & BlockChain<br/>Developer
+            Full Stack Web & Blockchain<br/>Developer
           </h1>
         </Reveal>
         <Reveal delay={160}>
-          <p style={{fontSize:17,color:"#94a3b8",lineHeight:1.8,maxWidth:620,margin:"0 auto 44px"}}>
-            I specialize in building high-performance, user-centric web applications using the MERN stack.
-            I bridge the gap between complex backend logic and seamless digital experiences across all platforms.
+          <p style={{fontSize:17,color:"#94a3b8",lineHeight:1.8,maxWidth:650,margin:"0 auto 44px"}}>
+            I specialize in building scalable full-stack web applications with the MERN stack alongside secure decentralized solutions and smart contracts. I bridge the gap between complex backend systems, Web3 architecture, and seamless user experiences.
           </p>
         </Reveal>
         <Reveal delay={220}>
@@ -34,7 +33,7 @@ export default function Hero() {
         <Reveal delay={300}>
           <div className="g4" style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:16}}>
             {[
-              {e:"⊞",n:"3+",  l:"PROJECTS COMPLETED"},
+              {e:"⊞",n:"10+",  l:"PROJECTS COMPLETED"},
               {e:"👥",n:"2",   l:"INTERNSHIPS"},
               {e:"💼",n:"1+",  l:"YEARS EXPERIENCE"},
               {e:"🌐",n:"10+", l:"TECH STACK"},

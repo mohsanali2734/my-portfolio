@@ -8,14 +8,13 @@ export default function Experience() {
       <div style={{maxWidth:1200,margin:"0 auto"}}>
         <div className="g2" style={{display:"grid",gridTemplateColumns:"320px 1fr",gap:60,alignItems:"flex-start"}}>
           <Reveal>
-            <div style={{position:"sticky",top:120}}>
+            <div className="sticky-desktop">
               <div style={{marginBottom:24}}><span className="section-badge">JOURNEY</span></div>
               <h2 style={{fontSize:"clamp(1.8rem,3vw,2.8rem)",fontWeight:900,lineHeight:1.2,marginBottom:20}}>
                 Professional<br/><span className="teal-italic">Experience</span>
               </h2>
               <p style={{color:"#64748b",fontSize:14,lineHeight:1.8}}>
-                I specialise in building full-stack solutions and high-performance web applications
-                with a focus on usability and scalability.
+                I specialize in building full-stack enterprise solutions and scalable web applications with a focus on high performance and clean architecture.
               </p>
             </div>
           </Reveal>
@@ -24,7 +23,7 @@ export default function Experience() {
             <div style={{width:2,background:"linear-gradient(to bottom,#2dd4bf,#2dd4bf44,transparent)",flexShrink:0,marginTop:8}}/>
             <div style={{display:"flex",flexDirection:"column",gap:40,flex:1}}>
               {EXPERIENCE.map((e,i)=>(
-                <Reveal key={e.role} delay={i*120}>
+                <Reveal key={`${e.role}-${e.company}`} delay={i*120}>
                   <div style={{position:"relative"}}>
                     <div style={{position:"absolute",left:-43,top:32,width:18,height:18,borderRadius:"50%",border:"2px solid #2dd4bf",background:"#0b0f1a",display:"flex",alignItems:"center",justifyContent:"center"}}>
                       <div style={{width:6,height:6,borderRadius:"50%",background:"#2dd4bf"}}/>

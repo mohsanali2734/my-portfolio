@@ -27,7 +27,7 @@ export default function About() {
             {/* Float: projects */}
             <div style={{position:"absolute",bottom:70,right:-20,background:"rgba(13,21,38,.96)",border:"1px solid #1e293b",borderRadius:14,padding:"12px 18px",display:"flex",alignItems:"center",gap:10}}>
               <div style={{width:34,height:34,borderRadius:10,background:"#0d2a2a",display:"flex",alignItems:"center",justifyContent:"center"}}><Ic ch='<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>'/></div>
-              <div><div style={{fontSize:20,fontWeight:900}}>3+</div><div style={{fontSize:9,color:"#64748b",fontWeight:800,letterSpacing:".08em"}}>COMPLETED PROJECTS</div></div>
+              <div><div style={{fontSize:20,fontWeight:900}}>10+</div><div style={{fontSize:9,color:"#64748b",fontWeight:800,letterSpacing:".08em"}}>COMPLETED PROJECTS</div></div>
             </div>
           </div>
         </Reveal>
@@ -42,32 +42,27 @@ export default function About() {
               Building <span className="teal-italic">Seamless<br/>Digital Experiences</span><br/>with Passion
             </h2>
             <p style={{color:"#94a3b8",fontSize:15,lineHeight:1.85,marginBottom:20}}>
-              I'm a motivated <span style={{color:"#2dd4bf",fontStyle:"italic"}}>Full-Stack Web Developer</span> with strong
-              fundamentals in frontend and backend technologies. I'm proficient in the MERN stack and
-              passionate about building scalable, secure web applications.
+              I'm a Full-Stack Software Developer and digital agency builder specializing in high-performance web applications. I bridge the gap between clean frontend architecture and robust backend logic.
             </p>
             <p style={{color:"#94a3b8",fontSize:15,lineHeight:1.85,marginBottom:28}}>
-              I have hands-on experience with <span style={{color:"#2dd4bf",fontStyle:"italic"}}>React.js, Node.js</span>, and
-              blockchain technologies including Solidity and Ethereum — delivering seamless digital products
-              that solve complex real-world problems.
+              With expertise spanning <span style={{color:"#2dd4bf",fontStyle:"italic"}}>Next.js, React, TypeScript, Node.js, and Express</span>, alongside blockchain systems like Solidity and smart contracts, I engineer secure, user-centric platforms that solve real-world problems.
             </p>
             <div style={{borderLeft:"3px solid #2dd4bf",paddingLeft:20,marginBottom:36,
               color:"#cbd5e1",fontSize:14,fontStyle:"italic",lineHeight:1.8}}>
-              "I'm currently exploring the intersection of web development and blockchain/AI,
-              aiming to merge decentralized solutions with modern applications."
+              "I'm passionate about combining modern web frameworks with decentralized and automated solutions to create scalable digital experiences."
             </div>
             {/* Education */}
             <div style={{background:"#0d1526",border:"1px solid #1e293b",borderRadius:14,padding:"18px 22px",marginBottom:16}}>
               <div style={{fontSize:11,color:"#2dd4bf",fontWeight:800,letterSpacing:".1em",marginBottom:8}}>EDUCATION</div>
-              <div style={{fontWeight:800,fontSize:15}}>Bachelors in Computer Science</div>
-              <div style={{color:"#2dd4bf",fontSize:13,fontWeight:600,marginTop:4}}>UAJK — Muzaffarabad, AJK</div>
+              <div style={{fontWeight:800,fontSize:15}}>Bachelor of Science in Computer Science</div>
+              <div style={{color:"#2dd4bf",fontSize:13,fontWeight:600,marginTop:4}}>University of Azad Jammu and Kashmir — Muzaffarabad</div>
               <div style={{color:"#64748b",fontSize:12,marginTop:4}}>Nov 2021 – Nov 2025</div>
             </div>
-            {/* Certs */}
+            {/* Certs / Core Focus */}
             {[
-              {n:"MERN Stack Development",o:"Coursera",y:"2024"},
-              {n:"Advanced JavaScript",o:"Udemy",y:"2024"},
-              {n:"Web Development",o:"Digiskills",y:"2024"},
+              {n:"Full-Stack Web Architecture & MERN Stack",o:"Professional Practice",y:"2025"},
+              {n:"Blockchain & Decentralized Systems (Solidity)",o:"Final Year Project",y:"2025"},
+              {n:"Frontend Engineering with Next.js & React",o:"Advanced Development",y:"2026"},
             ].map(c=>(
               <div key={c.n} style={{display:"flex",alignItems:"center",gap:10,background:"#0d1526",border:"1px solid #1e293b",borderRadius:10,padding:"10px 16px",marginBottom:8}}>
                 <IStar/>
