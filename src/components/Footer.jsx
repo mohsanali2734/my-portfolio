@@ -15,13 +15,38 @@ export default function Footer() {
             </p>
           </div>
           {[
-            {label:"NAVIGATE",links:["About","Experience","Projects","Services","Contact"]},
-            {label:"CONNECT", links:["LinkedIn","GitHub","Email"]},
-          ].map(g=>(
+            {
+              label: "NAVIGATE", 
+              links: [
+                { name: "About", href: "#about" },
+                { name: "Experience", href: "#experience" },
+                { name: "Projects", href: "#projects" },
+                { name: "Services", href: "#services" },
+                { name: "Contact", href: "#contact" }
+              ]
+            },
+            {
+              label: "CONNECT", 
+              links: [
+                { name: "LinkedIn", href: "https://www.linkedin.com/in/mohsan-ali-435495301/" },
+                { name: "GitHub", href: "https://github.com/mohsanali2734" },
+                { name: "Email", href: "mailto:dev.khmohsanali@gmail.com" }
+              ]
+            },
+          ].map(g => (
             <div key={g.label}>
               <div style={{fontSize:11,color:"#2dd4bf",fontWeight:800,letterSpacing:".1em",marginBottom:16}}>{g.label}</div>
               <div style={{display:"flex",flexDirection:"column",gap:10}}>
-                {g.links.map(l=><a key={l} href={`#${l.toLowerCase()}`} className="footer-link">{l}</a>)}
+                {g.links.map(l => (
+                  <a 
+                    key={l.name} 
+                    href={l.href} 
+                    className="footer-link"
+                    {...(l.href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                  >
+                    {l.name}
+                  </a>
+                ))}
               </div>
             </div>
           ))}
